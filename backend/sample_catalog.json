@@ -1,0 +1,1155 @@
+[
+  {
+    "name": "Global Skills Development Report",
+    "url": "https://www.shl.com/products/product-catalog/view/global-skills-development-report/",
+    "description": "This report is designed to be given to individuals who have completed the Global Skills Assessment (GSA), covering the Great 8 Domains with actionable development tips.",
+    "category": "Ability & Aptitude",
+    "assessment_type": "Ability & Aptitude, Assessment Exercises, Biodata & Situational Judgement, Competencies, Development & 360, Personality & Behavior",
+    "test_type": "A E B C D P",
+    "skills_measured": [
+      "global",
+      "skills",
+      "development",
+      "report"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "global",
+      "skills",
+      "development",
+      "report"
+    ]
+  },
+  {
+    "name": ".NET Framework 4.5",
+    "url": "https://www.shl.com/products/product-catalog/view/net-framework-4-5/",
+    "description": "SHL .NET Framework 4.5 — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "net",
+      "framework"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "net",
+      "framework"
+    ]
+  },
+  {
+    "name": ".NET MVC (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/net-mvc-new/",
+    "description": "SHL .NET MVC (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "net",
+      "mvc"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "net",
+      "mvc"
+    ]
+  },
+  {
+    "name": ".NET MVVM (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/net-mvvm-new/",
+    "description": "SHL .NET MVVM (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "net",
+      "mvvm"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "net",
+      "mvvm"
+    ]
+  },
+  {
+    "name": ".NET WCF (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/net-wcf-new/",
+    "description": "SHL .NET WCF (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "net",
+      "wcf"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "net",
+      "wcf"
+    ]
+  },
+  {
+    "name": ".NET WPF (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/net-wpf-new/",
+    "description": "SHL .NET WPF (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "net",
+      "wpf"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "net",
+      "wpf"
+    ]
+  },
+  {
+    "name": ".NET XAML (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/net-xaml-new/",
+    "description": "SHL .NET XAML (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "net",
+      "xaml"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "net",
+      "xaml"
+    ]
+  },
+  {
+    "name": "Accounts Payable (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-payable-new/",
+    "description": "SHL Accounts Payable (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "accounts",
+      "payable"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "accounts",
+      "payable"
+    ]
+  },
+  {
+    "name": "Accounts Payable Simulation (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-payable-simulation-new/",
+    "description": "SHL Accounts Payable Simulation (New) — an Individual Test Solution in the Simulations category.",
+    "category": "Simulations",
+    "assessment_type": "Simulations",
+    "test_type": "S",
+    "skills_measured": [
+      "accounts",
+      "payable",
+      "simulation"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "accounts",
+      "payable",
+      "simulation"
+    ]
+  },
+  {
+    "name": "Accounts Receivable (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-receivable-new/",
+    "description": "SHL Accounts Receivable (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "accounts",
+      "receivable"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "accounts",
+      "receivable"
+    ]
+  },
+  {
+    "name": "Accounts Receivable Simulation (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/accounts-receivable-simulation-new/",
+    "description": "SHL Accounts Receivable Simulation (New) — an Individual Test Solution in the Simulations category.",
+    "category": "Simulations",
+    "assessment_type": "Simulations",
+    "test_type": "S",
+    "skills_measured": [
+      "accounts",
+      "receivable",
+      "simulation"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "accounts",
+      "receivable",
+      "simulation"
+    ]
+  },
+  {
+    "name": "ADO.NET (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/ado-net-new/",
+    "description": "SHL ADO.NET (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "ado.net"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "ado.net"
+    ]
+  },
+  {
+    "name": "Adobe Experience Manager (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/adobe-experience-manager-new/",
+    "description": "SHL Adobe Experience Manager (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "adobe",
+      "experience",
+      "manager"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "adobe",
+      "experience",
+      "manager"
+    ]
+  },
+  {
+    "name": "Adobe Photoshop CC",
+    "url": "https://www.shl.com/products/product-catalog/view/adobe-photoshop-cc/",
+    "description": "SHL Adobe Photoshop CC — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "adobe",
+      "photoshop",
+      "cc"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "adobe",
+      "photoshop",
+      "cc"
+    ]
+  },
+  {
+    "name": "Aeronautical Engineering (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/aeronautical-engineering-new/",
+    "description": "SHL Aeronautical Engineering (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "aeronautical",
+      "engineering"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "aeronautical",
+      "engineering"
+    ]
+  },
+  {
+    "name": "Aerospace Engineering (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/aerospace-engineering-new/",
+    "description": "SHL Aerospace Engineering (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "aerospace",
+      "engineering"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "aerospace",
+      "engineering"
+    ]
+  },
+  {
+    "name": "Agile Software Development",
+    "url": "https://www.shl.com/products/product-catalog/view/agile-software-development/",
+    "description": "SHL Agile Software Development — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "agile",
+      "software",
+      "development"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "agile",
+      "software",
+      "development"
+    ]
+  },
+  {
+    "name": "Agile Testing (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/agile-testing-new/",
+    "description": "SHL Agile Testing (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "agile",
+      "testing"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "agile",
+      "testing"
+    ]
+  },
+  {
+    "name": "AI Skills",
+    "url": "https://www.shl.com/products/product-catalog/view/ai-skills/",
+    "description": "SHL AI Skills — an Individual Test Solution in the Personality & Behavior category.",
+    "category": "Personality & Behavior",
+    "assessment_type": "Personality & Behavior",
+    "test_type": "P",
+    "skills_measured": [
+      "ai",
+      "skills"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "ai",
+      "skills"
+    ]
+  },
+  {
+    "name": "Amazon Web Services (AWS) Development (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/amazon-web-services-aws-development-new/",
+    "description": "SHL Amazon Web Services (AWS) Development (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "amazon",
+      "web",
+      "services",
+      "aws",
+      "development"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "amazon",
+      "web",
+      "services",
+      "aws",
+      "development"
+    ]
+  },
+  {
+    "name": "Android Development (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/android-development-new/",
+    "description": "SHL Android Development (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "android",
+      "development"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "android",
+      "development"
+    ]
+  },
+  {
+    "name": "Angular 6 (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/angular-6-new/",
+    "description": "SHL Angular 6 (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "angular"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "angular"
+    ]
+  },
+  {
+    "name": "AngularJS (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/angularjs-new/",
+    "description": "SHL AngularJS (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "angularjs"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "angularjs"
+    ]
+  },
+  {
+    "name": "Apache Hadoop (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hadoop-new/",
+    "description": "SHL Apache Hadoop (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "hadoop"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "hadoop"
+    ]
+  },
+  {
+    "name": "Apache Hadoop Extensions (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hadoop-extensions-new/",
+    "description": "SHL Apache Hadoop Extensions (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "hadoop",
+      "extensions"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "hadoop",
+      "extensions"
+    ]
+  },
+  {
+    "name": "Apache HBase (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hbase-new/",
+    "description": "SHL Apache HBase (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "hbase"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "hbase"
+    ]
+  },
+  {
+    "name": "Apache Hive (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-hive-new/",
+    "description": "SHL Apache Hive (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "hive"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "hive"
+    ]
+  },
+  {
+    "name": "Apache Kafka (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-kafka-new/",
+    "description": "SHL Apache Kafka (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "kafka"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "kafka"
+    ]
+  },
+  {
+    "name": "Apache Pig (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-pig-new/",
+    "description": "SHL Apache Pig (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "pig"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "pig"
+    ]
+  },
+  {
+    "name": "Apache Spark (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/apache-spark-new/",
+    "description": "SHL Apache Spark (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "apache",
+      "spark"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "apache",
+      "spark"
+    ]
+  },
+  {
+    "name": "ASP .NET with C# (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/asp-net-with-c-new/",
+    "description": "SHL ASP .NET with C# (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "asp",
+      "net",
+      "with",
+      "c#"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "asp",
+      "net",
+      "with",
+      "c#"
+    ]
+  },
+  {
+    "name": "ASP.NET 4.5",
+    "url": "https://www.shl.com/products/product-catalog/view/asp-net-4-5/",
+    "description": "SHL ASP.NET 4.5 — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "asp.net"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "asp.net"
+    ]
+  },
+  {
+    "name": "Assessment and Development Center Exercises",
+    "url": "https://www.shl.com/products/product-catalog/view/assessment-and-development-center-exercises/",
+    "description": "SHL Assessment and Development Center Exercises — an Individual Test Solution in the Assessment Exercises category.",
+    "category": "Assessment Exercises",
+    "assessment_type": "Assessment Exercises",
+    "test_type": "E",
+    "skills_measured": [
+      "assessment",
+      "and",
+      "development",
+      "center",
+      "exercises"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "assessment",
+      "and",
+      "development",
+      "center",
+      "exercises"
+    ]
+  },
+  {
+    "name": "Automata - Fix (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-fix-new/",
+    "description": "Automated coding-simulation assessment that measures a candidate's ability to debug and fix existing code.",
+    "category": "Simulations",
+    "assessment_type": "Simulations",
+    "test_type": "S",
+    "skills_measured": [
+      "automata",
+      "fix"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "automata",
+      "fix"
+    ]
+  },
+  {
+    "name": "Automata - SQL (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-sql-new/",
+    "description": "Automated coding-simulation assessment that measures practical SQL query-writing ability.",
+    "category": "Simulations",
+    "assessment_type": "Simulations",
+    "test_type": "S",
+    "skills_measured": [
+      "automata",
+      "sql"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "automata",
+      "sql"
+    ]
+  },
+  {
+    "name": "Automata (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/automata-new/",
+    "description": "Automated coding-simulation assessment measuring real-world programming ability across multiple languages.",
+    "category": "Simulations",
+    "assessment_type": "Simulations",
+    "test_type": "S",
+    "skills_measured": [
+      "automata"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "automata"
+    ]
+  },
+  {
+    "name": "Written English v1",
+    "url": "https://www.shl.com/products/product-catalog/view/written-english-v1/",
+    "description": "SHL Written English v1 — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "written",
+      "english",
+      "v1"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "written",
+      "english",
+      "v1"
+    ]
+  },
+  {
+    "name": "Written Spanish",
+    "url": "https://www.shl.com/products/product-catalog/view/written-spanish/",
+    "description": "SHL Written Spanish — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "written",
+      "spanish"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "written",
+      "spanish"
+    ]
+  },
+  {
+    "name": "Zabbix (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/zabbix-new/",
+    "description": "SHL Zabbix (New) — an Individual Test Solution in the Knowledge & Skills category.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "zabbix"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "zabbix"
+    ]
+  },
+  {
+    "name": "360 Digital Report",
+    "url": "https://www.shl.com/products/product-catalog/view/360-digital-report/",
+    "description": "SHL 360 Digital Report — an Individual Test Solution in the Development & 360 category.",
+    "category": "Development & 360",
+    "assessment_type": "Development & 360",
+    "test_type": "D",
+    "skills_measured": [
+      "digital",
+      "report"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "digital",
+      "report"
+    ]
+  },
+  {
+    "name": "360° Multi-Rater Feedback System (MFS)",
+    "url": "https://www.shl.com/products/product-catalog/view/360-multi-rater-feedback-system-mfs/",
+    "description": "SHL 360° Multi-Rater Feedback System (MFS) — an Individual Test Solution in the Development & 360, Personality & Behavior category.",
+    "category": "Development & 360",
+    "assessment_type": "Development & 360, Personality & Behavior",
+    "test_type": "D P",
+    "skills_measured": [
+      "multi",
+      "rater",
+      "feedback",
+      "system",
+      "mfs"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "multi",
+      "rater",
+      "feedback",
+      "system",
+      "mfs"
+    ]
+  },
+  {
+    "name": "Occupational Personality Questionnaire OPQ32r",
+    "url": "https://www.shl.com/products/product-catalog/view/occupational-personality-questionnaire-opq32r/",
+    "description": "The SHL Occupational Personality Questionnaire (OPQ32r) is one of the most widely used and respected measures of workplace behavioural style, providing a clear framework for understanding the impact of personality on job performance.",
+    "category": "Personality & Behavior",
+    "assessment_type": "Personality & Behavior",
+    "test_type": "P",
+    "skills_measured": [
+      "occupational",
+      "personality",
+      "questionnaire",
+      "opq32r"
+    ],
+    "duration": "25-40 minutes",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "occupational",
+      "personality",
+      "questionnaire",
+      "opq32r"
+    ]
+  },
+  {
+    "name": "Global Skills Assessment",
+    "url": "https://www.shl.com/products/product-catalog/view/global-skills-assessment/",
+    "description": "The Global Skills Assessment (GSA) measures 96 discrete workplace skills/behaviors aligned to SHL's Universal Competency Framework (UCF) in a single 15-minute, forced-choice assessment.",
+    "category": "Personality & Behavior",
+    "assessment_type": "Personality & Behavior, Ability & Aptitude",
+    "test_type": "P A",
+    "skills_measured": [
+      "global",
+      "skills",
+      "assessment"
+    ],
+    "duration": "15 minutes",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "global",
+      "skills",
+      "assessment"
+    ]
+  },
+  {
+    "name": "Spring (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/spring-new/",
+    "description": "Multi-choice test that measures the knowledge of Spring core, AOP, IOC container and transactions.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "spring"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "spring"
+    ]
+  },
+  {
+    "name": "SQL (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-new/",
+    "description": "Multi-choice test that measures the knowledge of SQL queries, data manipulation and transaction processing.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "sql"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "sql"
+    ]
+  },
+  {
+    "name": "Marketing (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/marketing-new/",
+    "description": "Multi-choice test that measures conceptual knowledge of marketing principles, market research, consumer behavior, brand management, sales management, channel management and advertisement management.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "marketing"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "marketing"
+    ]
+  },
+  {
+    "name": "Human Resources (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/human-resources-new/",
+    "description": "Multi-choice test that measures knowledge and understanding of basic Human Resources Management concepts including planning, training and development, performance appraisal, and compensation management.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "human",
+      "resources"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "human",
+      "resources"
+    ]
+  },
+  {
+    "name": "Java 8 (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/java-8-new/",
+    "description": "Multi-choice test that measures the knowledge of Java class design, exceptions, generics, collections, concurrency, JDBC and Java I/O fundamentals.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "java"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "java"
+    ]
+  },
+  {
+    "name": "Core Java (Entry Level) (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/core-java-entry-level-new/",
+    "description": "Multi-choice test that measures the knowledge of basic Java constructs, OOP concepts, file handling, exception handling, threads, generic class and inner class.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "core",
+      "java",
+      "entry",
+      "level"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "core",
+      "java",
+      "entry",
+      "level"
+    ]
+  },
+  {
+    "name": "Core Java (Advanced Level) (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/core-java-advanced-level-new/",
+    "description": "Multi-choice test that measures knowledge of basic Java constructs, OOP concepts, files and exception handling, and advanced Java concepts like generics, collections, threads, strings and concurrency.",
+    "category": "Knowledge & Skills",
+    "assessment_type": "Knowledge & Skills",
+    "test_type": "K",
+    "skills_measured": [
+      "core",
+      "java",
+      "advanced",
+      "level"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "core",
+      "java",
+      "advanced",
+      "level"
+    ]
+  },
+  {
+    "name": "SHL Verify Interactive – Numerical Reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-numerical-reasoning/",
+    "description": "Assesses how the candidate comprehends numerical information in various formats.",
+    "category": "Ability & Aptitude",
+    "assessment_type": "Ability & Aptitude",
+    "test_type": "A",
+    "skills_measured": [
+      "shl",
+      "verify",
+      "interactive",
+      "numerical",
+      "reasoning"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "shl",
+      "verify",
+      "interactive",
+      "numerical",
+      "reasoning"
+    ]
+  },
+  {
+    "name": "SHL Verify Interactive Numerical Calculation",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-numerical-calculation/",
+    "description": "Measures a candidate's ability to work with numbers and use appropriate mathematics in different situations; adaptive and ideal for entry-level roles.",
+    "category": "Ability & Aptitude",
+    "assessment_type": "Ability & Aptitude",
+    "test_type": "A",
+    "skills_measured": [
+      "shl",
+      "verify",
+      "interactive",
+      "numerical",
+      "calculation"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "shl",
+      "verify",
+      "interactive",
+      "numerical",
+      "calculation"
+    ]
+  },
+  {
+    "name": "SHL Verify Interactive G+",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-g/",
+    "description": "A test of general cognitive ability (SVIG+) generating scores for Deductive, Inductive, and Numerical Reasoning plus an overall general ability score.",
+    "category": "Ability & Aptitude",
+    "assessment_type": "Ability & Aptitude",
+    "test_type": "A",
+    "skills_measured": [
+      "shl",
+      "verify",
+      "interactive",
+      "g+"
+    ],
+    "duration": "36 minutes + 10 min practice",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "shl",
+      "verify",
+      "interactive",
+      "g+"
+    ]
+  },
+  {
+    "name": "SHL Verify Interactive – Deductive Reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-deductive-reasoning/",
+    "description": "Measures the ability to draw logical conclusions based on information provided, identify strengths and weaknesses of arguments, and complete scenarios using incomplete information.",
+    "category": "Ability & Aptitude",
+    "assessment_type": "Ability & Aptitude",
+    "test_type": "A",
+    "skills_measured": [
+      "shl",
+      "verify",
+      "interactive",
+      "deductive",
+      "reasoning"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "shl",
+      "verify",
+      "interactive",
+      "deductive",
+      "reasoning"
+    ]
+  },
+  {
+    "name": "SHL Verify Interactive - Inductive Reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-inductive-reasoning/",
+    "description": "Evaluates the ability to identify specific patterns in data or situations and generalize that information to broader contexts.",
+    "category": "Ability & Aptitude",
+    "assessment_type": "Ability & Aptitude",
+    "test_type": "A",
+    "skills_measured": [
+      "shl",
+      "verify",
+      "interactive",
+      "inductive",
+      "reasoning"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "shl",
+      "verify",
+      "interactive",
+      "inductive",
+      "reasoning"
+    ]
+  },
+  {
+    "name": "Verify Interactive G+ Report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-g-report/",
+    "description": "Score report for the SHL Verify Interactive G+ assessment.",
+    "category": "Development & 360",
+    "assessment_type": "Development & 360",
+    "test_type": "D",
+    "skills_measured": [
+      "verify",
+      "interactive",
+      "g+",
+      "report"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "verify",
+      "interactive",
+      "g+",
+      "report"
+    ]
+  },
+  {
+    "name": "Verify Interactive Ability Report",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-ability-report/",
+    "description": "Score report for SHL Verify Interactive ability assessments.",
+    "category": "Development & 360",
+    "assessment_type": "Development & 360",
+    "test_type": "D",
+    "skills_measured": [
+      "verify",
+      "interactive",
+      "ability",
+      "report"
+    ],
+    "duration": "",
+    "remote_testing_support": true,
+    "adaptive_irt_support": false,
+    "keywords": [
+      "verify",
+      "interactive",
+      "ability",
+      "report"
+    ]
+  }
+]
