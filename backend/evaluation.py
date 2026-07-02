@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 # so it's reached via an explicit path insertion rather than a relative
 # import. This keeps metric functions in exactly one place (no duplicated
 # scoring code between the API-facing engine and the standalone CLI).
-_EVAL_DIR = Path(__file__).resolve().parent.parent / "evaluation"
+_EVAL_DIR = Path(__file__).resolve().parent / "evaluation"
 if str(_EVAL_DIR) not in sys.path:
     sys.path.insert(0, str(_EVAL_DIR))
 
