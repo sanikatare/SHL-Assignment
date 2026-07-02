@@ -1,4 +1,4 @@
-# SHL Assessment Recommendation Agent — Full Project
+# SHL - Assessment Recommendation Agent 
 
 A conversational agent that recommends SHL assessments based on hiring
 requirements. This repo contains three pieces:
