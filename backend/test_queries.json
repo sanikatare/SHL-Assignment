@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q01",
+    "query": "entry level Java developer assessment",
+    "relevant_names": ["Core Java (Entry Level) (New)", "Java 8 (New)"]
+  },
+  {
+    "id": "q02",
+    "query": "senior Java developer with advanced programming skills",
+    "relevant_names": ["Core Java (Advanced Level) (New)", "Java 8 (New)"]
+  },
+  {
+    "id": "q03",
+    "query": ".NET developer with C# and ASP.NET experience",
+    "relevant_names": [".NET Framework 4.5", "ASP.NET 4.5", "ASP .NET with C# (New)"]
+  },
+  {
+    "id": "q04",
+    "query": "SQL database skills test for backend engineer",
+    "relevant_names": ["SQL (New)", "Automata - SQL (New)"]
+  },
+  {
+    "id": "q05",
+    "query": "personality assessment for a leadership hire",
+    "relevant_names": ["Occupational Personality Questionnaire OPQ32r"]
+  },
+  {
+    "id": "q06",
+    "query": "numerical reasoning cognitive ability test",
+    "relevant_names": ["SHL Verify Interactive \u2013 Numerical Reasoning", "SHL Verify Interactive Numerical Calculation"]
+  },
+  {
+    "id": "q07",
+    "query": "inductive and deductive reasoning assessment",
+    "relevant_names": ["SHL Verify Interactive - Inductive Reasoning", "SHL Verify Interactive \u2013 Deductive Reasoning"]
+  },
+  {
+    "id": "q08",
+    "query": "AWS cloud development skills test",
+    "relevant_names": ["Amazon Web Services (AWS) Development (New)"]
+  },
+  {
+    "id": "q09",
+    "query": "Android mobile app developer assessment",
+    "relevant_names": ["Android Development (New)"]
+  },
+  {
+    "id": "q10",
+    "query": "agile software development and agile testing",
+    "relevant_names": ["Agile Software Development", "Agile Testing (New)"]
+  },
+  {
+    "id": "q11",
+    "query": "accounts payable and accounts receivable finance role",
+    "relevant_names": [
+      "Accounts Payable (New)",
+      "Accounts Receivable (New)",
+      "Accounts Payable Simulation (New)",
+      "Accounts Receivable Simulation (New)"
+    ]
+  },
+  {
+    "id": "q12",
+    "query": "human resources recruiter knowledge test",
+    "relevant_names": ["Human Resources (New)"]
+  },
+  {
+    "id": "q13",
+    "query": "marketing role knowledge assessment",
+    "relevant_names": ["Marketing (New)"]
+  },
+  {
+    "id": "q14",
+    "query": "Apache Spark and Hadoop big data engineer",
+    "relevant_names": ["Apache Spark (New)", "Apache Hadoop (New)", "Apache Hadoop Extensions (New)"]
+  },
+  {
+    "id": "q15",
+    "query": "global skills assessment and development report",
+    "relevant_names": ["Global Skills Assessment", "Global Skills Development Report"]
+  },
+  {
+    "id": "q16",
+    "query": "written English communication skills test",
+    "relevant_names": ["Written English v1"]
+  },
+  {
+    "id": "q17",
+    "query": "written Spanish language proficiency test",
+    "relevant_names": ["Written Spanish"]
+  }
+]
