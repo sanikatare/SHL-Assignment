@@ -26,7 +26,7 @@ _EVAL_DIR = Path(__file__).resolve().parent / "evaluation"
 if str(_EVAL_DIR) not in sys.path:
     sys.path.insert(0, str(_EVAL_DIR))
 
-from metrics import * (  # noqa: E402
+from metrics import (  # noqa: E402
     top_k_accuracy,
     precision_at_k,
     recall_at_k,
