@@ -1,271 +1,336 @@
-# SHL - Assessment Recommendation Agent 
+# SHL Assessment Recommendation Agent
 
-A conversational agent that recommends SHL assessments based on hiring
-requirements. This repo contains three pieces:
+A conversational AI application that recommends the most relevant SHL assessments based on hiring requirements. The system supports multi-turn conversations, clarification questions, assessment comparison, hybrid retrieval, and grounded recommendations while ensuring responses remain based on the SHL assessment catalog.
+
+---
+
+## Overview
+
+This project was built as part of the SHL AI Internship Assignment.
+
+The application enables recruiters and hiring managers to describe hiring requirements in natural language and receive the most appropriate SHL assessments with explanations. The system maintains conversational context, asks clarification questions when necessary, supports follow-up refinements, and compares assessments using only verified catalog data.
+
+---
+
+## Features
+
+### Conversational Recommendation Engine
+
+- Natural language hiring requirement understanding
+- Multi-turn conversation support
+- Context-aware follow-up questions
+- Conversation memory without server-side sessions
+- Constraint extraction from previous messages
+
+### Intelligent Retrieval
+
+- Hybrid ranking pipeline
+- TF-IDF similarity
+- Keyword matching
+- RapidFuzz fuzzy matching
+- Skill overlap scoring
+- Role similarity scoring
+- Assessment type weighting
+
+### Assessment Comparison
+
+Compare assessments using catalog-backed information including:
+
+- Assessment Type
+- Skills Measured
+- Duration
+- Remote Testing Support
+- Adaptive Testing
+- Use Cases
+- Strengths
+- Limitations
+
+No comparison content is hallucinated—all information is derived from the SHL catalog.
+
+### Grounded Recommendations
+
+Each recommendation includes:
+
+- Explanation
+- Matching criteria
+- Assessment metadata
+- Official SHL URL
+
+### Optional LLM + RAG Support
+
+When an Anthropic API key is configured, the system uses Retrieval-Augmented Generation to produce more natural responses while enforcing groundedness checks to prevent hallucinations.
+
+Without an API key, the application continues to operate using deterministic retrieval only.
+
+### Evaluation Framework
+
+Built-in evaluation metrics include:
+
+- Top-1 Accuracy
+- Top-3 Accuracy
+- Precision@3
+- Recall@3
+- Mean Reciprocal Rank (MRR)
+- Average Retrieval Score
+- Average Response Time
+- Groundedness
+- Recommendation Relevance
+
+---
+
+# Project Structure
 
 ```
 SHL-Full-Project/
-├── backend/        FastAPI service
-│   ├── app.py            API routes: /health, /chat, /compare, /evaluate
-│   ├── chat.py            Thin orchestrator: wires memory → retriever → comparison
-│   ├── memory.py          Conversation state: constraint extraction + refinement intents
-│   ├── parser.py          Scope / injection detection, comparison-item text extraction
-│   ├── retriever.py        Retrieval + filtering + ranking orchestration (TF-IDF index owner)
-│   ├── ranking.py          Scoring primitives: keyword/TF-IDF, fuzzy, skill overlap, role sim, type weight
-│   ├── comparison.py       Markdown + structured comparison table builder (catalog-only, no hallucination)
-│   ├── evaluation.py       Evaluation engine shared by POST /evaluate and evaluation/evaluate.py
-│   ├── models.py / models_catalog.py   Pydantic API contracts + catalog dataclass
-│   ├── utils.py            Catalog I/O, logging, base constraint extraction
-│   └── tests/               pytest behavior suite
-├── evaluation/      Standalone evaluation harness (no FastAPI dependency)
-│   ├── evaluate.py         CLI entry point
-│   ├── metrics.py           Canonical, dependency-free metric functions
-│   └── test_queries.json    Ground-truth query set derived from catalog.json
-├── frontend/        React + Vite + Tailwind chat UI
+│
+├── backend/
+│   ├── app.py
+│   ├── chat.py
+│   ├── memory.py
+│   ├── retriever.py
+│   ├── ranking.py
+│   ├── comparison.py
+│   ├── evaluation.py
+│   ├── parser.py
+│   ├── models.py
+│   ├── utils.py
+│   └── tests/
+│
+├── evaluation/
+│   ├── evaluate.py
+│   ├── metrics.py
+│   └── test_queries.json
+│
+├── frontend/
+│
 ├── run_backend.sh
-└── run_frontend.sh
+├── run_frontend.sh
+└── README.md
 ```
 
-The backend has been reviewed and fixed against `SHL_AI_Intern_Assignment.pdf`
-— see [`docs/APPROACH.md`](docs/APPROACH.md) for the original writeup, and
-`backend/tests/` for the behavior test suite (`pytest`). **`catalog.json`
-currently ships with 57 verified real SHL entries as a demo seed — run
-`python run_scraper.py` with real internet access before submitting to pull
-the full catalog.**
+---
 
-## What's new in this upgrade
+# Technology Stack
 
-All of the below is **additive**: `GET /health` and `POST /chat` keep their
-original request/response shape (new fields are optional), and every
-pre-existing test in `test_chat_behaviors.py` still passes unmodified.
+## Backend
 
-1. **Conversational clarifying questions** — `memory.ConversationState.missing_fields()`
-   checks role / seniority / skills (personality or cognitive-ability phrasing
-   also satisfies the skills slot) before any retrieval happens, and `chat.py`
-   asks one concise question at a time. A turn-cap safety valve
-   (`MAX_TURNS_BEFORE_FORCED_RECOMMENDATION`) guarantees a best-effort
-   shortlist is produced well before the assignment's 8-turn cap.
-2. **Conversation memory** — the API is intentionally stateless (the client
-   re-sends full history each turn), so "memory" means deterministically
-   re-deriving state from that history in `memory.py` rather than a session
-   store. Because retrieval is a pure function of accumulated constraints,
-   replaying the same history always reproduces the same base shortlist —
-   which is what makes index-based refinements ("compare the first two")
-   possible without server-side session state.
-3. **Refinement pipeline** — `chat.py` now follows: *Query → Intent Detection
-   → Context Update → Constraint Extraction → Assessment Retrieval →
-   Filtering → Ranking → Response*, matching the assignment diagram.
-   Supported refinements: `"only remote assessments"`, `"shorter than 30
-   minutes"`, `"only personality tests"`, `"exclude numerical reasoning"`,
-   `"show more"`, `"only adaptive tests"`.
-4. **Assessment comparison** — `"compare the first two"`, `"Java 8 vs Core
-   Java"`, `"which is better?"` all resolve to a markdown + structured
-   comparison table (`comparison.py`) with columns: Assessment Name, Type,
-   Skills Measured, Duration, Remote Testing, Adaptive, Use Case, Strengths,
-   Limitations, Recommendation — every cell derived from catalog fields only,
-   never free-generated.
-5. **Grounded responses** — each `Recommendation` now carries an
-   `explanation` (template-built from catalog fields) and `matched_fields`
-   (the literal request terms found in that assessment's catalog text), so
-   nothing is asserted that isn't backed by the catalog.
-6. **Retrieval improvements** — `ranking.py` combines keyword/TF-IDF
-   similarity, RapidFuzz fuzzy matching, skill-overlap scoring, role
-   similarity, and assessment-type weighting into one weighted score
-   (weights configurable via `.env`, see `.env.example`).
-7. **Evaluation module** — `evaluation/` (Top-1/Top-3 accuracy, Precision@3,
-   Recall@3, MRR, average retrieval score, average response time,
-   groundedness, recommendation relevance) — see "Evaluation" below.
-8. **New endpoints** — `POST /compare`, `POST /evaluate` (existing endpoints
-   unchanged).
-9. **Frontend** — comparison tables now render as real tables (not raw
-   markdown), a "Clarifying question" badge appears on clarification turns,
-   loading/error states are unchanged from before.
-10. **LLM / RAG layer** (`backend/llm.py`, optional, off by default) —
-    retrieval stays deterministic and catalog-only; when `ANTHROPIC_API_KEY`
-    is set, the already-retrieved shortlist is handed to an LLM to compose
-    natural prose around it (classic RAG: retrieve -> augment prompt with
-    retrieved context -> generate), with a groundedness guardrail that
-    rejects any output referencing a name/URL outside the retrieved set,
-    plus a semantic fallback for constraint extraction when keyword
-    matching finds nothing. With no key configured, every code path that
-    touches this module short-circuits and behavior is identical to before
-    it existed — see `docs/APPROACH.md` §2 for the full design rationale
-    and `backend/tests/test_llm_rag.py` for the (mocked, no-network) tests.
+- FastAPI
+- Python
+- Pydantic
+- TF-IDF (Scikit-learn)
+- RapidFuzz
+- Anthropic Claude (Optional)
+- Pytest
 
-## Evaluator's checklist
+## Frontend
 
-| Requirement | Status | Where |
-|---|---|---|
-| LLM and/or RAG usage | Present (optional, off by default) | `backend/llm.py`, wired into `chat.py`/`memory.py` |
-| Clarifying questions | Present | `memory.ConversationState.missing_fields()`, `chat._generate_clarification_response` |
-| Context-aware follow-up refinement | Present | `memory.py` (stateless re-derivation from full history), `chat.py` refinement branch |
-| Assessment comparison using catalog evidence | Present | `comparison.py`, `retriever.resolve_items` (name/acronym/fuzzy match) |
-| Grounded recommendations | Present | `Recommendation.explanation`/`matched_fields`, RAG guardrail in `llm._is_grounded` |
-| Retrieval quality | Present, bounded by seed catalog size | `ranking.py` hybrid TF-IDF/fuzzy/skill/role/type scoring |
-| Evaluation methodology | Present | `evaluation/` (CLI) + `backend/evaluation.py` + `POST /evaluate`; Top-1/3, P@3, R@3, MRR, groundedness, relevance |
-| API quality | Present | FastAPI + Pydantic schemas, typed responses, `/docs` |
-| Error handling | Present | try/except + `HTTPException` per route, global exception handler, graceful catalog-missing states |
-| Documentation | Present | this file, `docs/APPROACH.md`, `frontend/README.md`, module docstrings |
+- React
+- Vite
+- Tailwind CSS
 
-**Open item:** `catalog.json` ships with a 57-item verified seed, not the full
-~377-item SHL catalog — run `python run_scraper.py` with real internet access
-before submitting (see "Quick start" below and `docs/APPROACH.md` §6).
+---
 
-## Quick start (two terminals)
+# Installation
 
-### Terminal 1 — backend
+## Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/shl-assessment-agent.git
+
+cd shl-assessment-agent
+```
+
+---
+
+# Backend Setup
 
 ```bash
 cd backend
-pip install -r requirements.txt --break-system-packages   # or use a venv
+
+pip install -r requirements.txt
 ```
 
-The recommender needs `catalog.json` (a list of SHL assessments) to serve
-recommendations. You have two options:
+Generate the SHL catalog:
 
-**Option A — real SHL data (requires internet access to shl.com):**
 ```bash
 python run_scraper.py
-python app.py
 ```
 
-**Option B — quick smoke test with a small bundled sample catalog:**
+Or use the bundled sample catalog:
+
 ```bash
 cp sample_catalog.json catalog.json
+```
+
+Start the backend:
+
+```bash
 python app.py
 ```
 
-Either way, the API comes up at `http://localhost:8000`. Verify with:
-```bash
-curl http://localhost:8000/health
+Backend runs at:
+
+```
+http://localhost:8000
 ```
 
-Or, from the project root, `./run_backend.sh` does the "copy sample catalog
-if none exists, then start" dance automatically.
+---
 
-### Terminal 2 — frontend
+# Frontend Setup
 
 ```bash
 cd frontend
+
 npm install
+
 npm run dev
 ```
 
-Open **http://localhost:5173**. It talks to `http://localhost:8000` by
-default (override via `frontend/.env`, see `frontend/.env.example`).
-
-Or, from the project root: `./run_frontend.sh`.
-
-## What's in the frontend
-
-- Chat interface (user/assistant bubbles, auto-scroll, typewriter-style
-  reply animation)
-- Recommendation cards rendered from the `recommendations` array in the
-  `/chat` response — test-type badge, relevance meter when `score` is
-  present, link out to the SHL assessment page, responsive grid → stacked
-  on mobile
-- **Comparison tables** — rendered from the new `comparison` field as an
-  actual HTML table (`ComparisonTable.jsx`), not raw markdown text
-- **Clarifying-question badge** — shown on assistant turns where
-  `needs_clarification` is true
-- Fixed input bar (Enter to send, Shift+Enter for newline, disabled while
-  loading)
-- Loading / empty / error states, with retry on failure
-- Suggested prompts, clear-conversation button, dark mode toggle, chat
-  history persisted to localStorage, copy-message button, toast
-  notifications, live backend connection indicator
-
-Full details, design rationale, and project structure are in
-[`frontend/README.md`](frontend/README.md).
-
-## API contract
-
-`GET /health` and `POST /chat`'s original fields are unchanged; `comparison`
-and `needs_clarification` are new, optional, additive fields.
+Frontend runs at:
 
 ```
-GET  /health
-  → { "status": "ok" }
+http://localhost:5173
+```
 
+---
+
+# API Endpoints
+
+## Health Check
+
+```
+GET /health
+```
+
+Returns application status.
+
+---
+
+## Chat
+
+```
 POST /chat
-  Request:  { "messages": [{ "role": "user" | "assistant", "content": string }] }
-  Response: {
-    "reply": string,
-    "recommendations": [{
-      "name": string, "url": string, "test_type": string,
-      "score"?: number, "duration"?: string,
-      "remote_testing_support"?: boolean, "adaptive_irt_support"?: boolean,
-      "explanation"?: string, "matched_fields"?: string[]
-    }],
-    "end_of_conversation": boolean,
-    "comparison"?: { "columns": string[], "rows": object[], "markdown": string },
-    "needs_clarification": boolean
-  }
-
-POST /compare
-  Request:  { "items"?: string[], "messages"?: Message[] }   // provide one of the two
-  Response: { "columns": string[], "rows": object[], "markdown": string }
-
-POST /evaluate
-  Request:  { "top_k"?: number }   // defaults to 10
-  Response: {
-    "num_queries": number, "top_1_accuracy": number, "top_3_accuracy": number,
-    "precision_at_3": number, "recall_at_3": number, "mrr": number,
-    "average_retrieval_score": number, "average_response_time_ms": number,
-    "groundedness": number, "recommendation_relevance": number,
-    "per_query": object[]
-  }
 ```
 
-## Evaluation
+Processes conversational requests and returns assessment recommendations.
 
-Two ways to run it:
+---
 
-**Standalone CLI (no server needed):**
+## Compare
+
+```
+POST /compare
+```
+
+Compares multiple assessments using catalog-backed information.
+
+---
+
+## Evaluate
+
+```
+POST /evaluate
+```
+
+Runs the evaluation benchmark over the recommendation engine.
+
+---
+
+# Evaluation
+
+Run locally:
+
 ```bash
 cd evaluation
-python evaluate.py                 # prints a report, uses backend/catalog.json
-python evaluate.py --top-k 5 --json report.json
+
+python evaluate.py
 ```
 
-**Via the running API:**
+Generate JSON report:
+
 ```bash
-curl -X POST http://localhost:8000/evaluate -H "Content-Type: application/json" -d '{"top_k": 10}'
+python evaluate.py --json report.json
 ```
 
-`evaluation/test_queries.json` contains 17 hand-authored queries with
-`relevant_names` grounded directly in the bundled `catalog.json` contents
-(e.g. a "Java developer" query's relevant set is the catalog's actual Java
-assessments) — replace/extend this file once the full ~377-item catalog is
-scraped for a more representative evaluation.
+Or via API:
 
-## Tests
+```bash
+POST /evaluate
+```
+
+---
+
+# Testing
+
+Run all backend tests:
 
 ```bash
 cd backend
-pip install pytest httpx --break-system-packages
+
 pytest tests/ -v
 ```
 
-`tests/test_chat_behaviors.py` is the original hard-eval suite (schema
-compliance, catalog-only URLs, scope refusal, prompt-injection resistance,
-turn-cap safety, clarify/recommend/refine/compare). `tests/test_new_features.py`
-covers the memory/refinement/comparison/evaluation modules. `tests/test_llm_rag.py`
-covers the LLM/RAG layer — entirely mocked (no network, no API key needed) —
-including the no-key no-op path, the semantic-extraction merge rules, and the
-groundedness guardrail that rejects ungrounded generated replies.
+The test suite validates:
 
-## Deployment
+- Recommendation quality
+- Clarification flow
+- Context retention
+- Assessment comparison
+- Prompt injection resistance
+- API schema compliance
+- LLM guardrails
+- Grounded responses
 
-`backend/Dockerfile`, `backend/Procfile`, and `backend/render.yaml` are
-included for Render/Fly/Railway/Heroku-style hosts. All read `$PORT` from
-the environment. Health check path is `/health` (allow up to 2 minutes for
-cold starts, per the assignment).
+---
 
-## Verified working end-to-end
+# Optional LLM Configuration
 
-Both pieces were installed and run together during development of this
-frontend: `pip install -r backend/requirements.txt`, a smoke-test catalog,
-`python app.py`, then `curl -X POST /chat` returned real recommendation
-payloads that the new frontend renders directly — confirming the contract
-match. `npm install && npm run build` in `frontend/` also completes cleanly.
+Create a `.env` file inside `backend`.
+
+```
+ANTHROPIC_API_KEY=your_api_key
+```
+
+When configured, the application enables Retrieval-Augmented Generation (RAG). Without an API key, it falls back to deterministic retrieval.
+
+---
+
+# Deployment
+
+Deployment configurations are included for cloud platforms supporting FastAPI applications.
+
+Supported platforms include:
+
+- Render
+- Railway
+- Fly.io
+- Heroku
+
+The backend exposes:
+
+```
+/health
+```
+
+for health monitoring.
+
+---
+
+# Key Capabilities
+
+- Conversational recommendation engine
+- Multi-turn context awareness
+- Clarification question generation
+- Hybrid retrieval pipeline
+- Assessment comparison
+- Grounded recommendations
+- Optional Retrieval-Augmented Generation (RAG)
+- Evaluation framework
+- Production-ready FastAPI backend
+- Modern React frontend
+
+---
+
+# License
+
+This project was developed for the SHL AI Internship Assignment and is intended for educational and demonstration purposes.
